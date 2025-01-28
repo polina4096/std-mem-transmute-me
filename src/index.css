@@ -13,14 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*::selection {
+  background: var(--color-selection);
+}
+
 :root.dark {
   --color-text: #ffffff;
   --color-bg: #1f1f1f;
+  --color-selection: #373a5b;
 }
 
 :root {
   --color-text: #1f1f1f;
   --color-bg: #ffffff;
+  --color-selection: #c7caeb;
 }
 
 details summary::-webkit-details-marker {
