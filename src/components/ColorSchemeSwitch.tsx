@@ -13,13 +13,13 @@ export function ColorSchemeSwitch() {
   });
 
   return (
-    <div ref={menuRef} class="flex flex-col items-end relative">
+    <div ref={menuRef} class="relative flex flex-col items-end">
       <div
-        class="text-neutral-500 hover:text-neutral-400 transition duration-100 i-lucide-sun ease-in-out cursor-pointer select-none text-[21px]"
+        class="i-lucide-sun cursor-pointer select-none text-[21px] text-neutral-500 transition duration-100 ease-in-out hover:text-neutral-400"
         onClick={() => setShowMenu(!showMenu())}
       />
       <Show when={showMenu()}>
-        <div class="pt-2 text-right absolute top-[21px] z-36">
+        <div class="absolute top-[21px] z-36 pt-2 text-right">
           <For each={colorSchemes}>
             {current => (
               <div

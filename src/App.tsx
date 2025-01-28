@@ -88,14 +88,14 @@ export function App() {
 
   return (
     <div class="w-full flex justify-center">
-      <div class="max-w-[640px] w-full mx-10 pt-8 gap-6 flex flex-col">
+      <div class="mx-10 max-w-[640px] w-full flex flex-col gap-6 pt-8">
         <div class="flex justify-between">
           <Logo />
           <ColorSchemeSwitch />
         </div>
         <div class="flex flex-col gap-6">
           <Spoiler placeholder={<div class="text-neutral-500">Expand description</div>}>
-            <div class="font-serif flex flex-col gap-3">
+            <div class="flex flex-col gap-3 font-serif">
               <div>
                 Hi, I'm Полина.
               </div>
@@ -111,7 +111,7 @@ export function App() {
                     <div class="text-fuchsia-700 dark:text-teal-500">
                       {text}
                     </div>
-                    <a class="text-text decoration-none hover:underline font-serif" href={href}>
+                    <a class="text-text font-serif decoration-none hover:underline" href={href}>
                       {link}
                     </a>
                   </>
@@ -129,7 +129,7 @@ export function App() {
                       {text}
                     </div>
                     <div
-                      class="hover:underline bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-400 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:active:bg-neutral-700 px-1 rounded-md font-serif truncate cursor-pointer"
+                      class="cursor-pointer truncate rounded-md bg-neutral-200 px-1 font-serif active:bg-neutral-400 dark:bg-neutral-900 hover:bg-neutral-300 hover:underline dark:active:bg-neutral-700 dark:hover:bg-neutral-800"
                       onClick={(e) => {
                         const addr = e.target.textContent;
                         if (!addr) {
