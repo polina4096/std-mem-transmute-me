@@ -5,14 +5,14 @@ export function Spoiler(props: {
   placeholder: JSX.Element;
 }) {
   return (
-    <details open class="flex justify-start [&_.placeholder]:open:hidden [&_.chevron]:hover:text-neutral-400 [&_.chevron]:open:hover:text-text [&_.chevron]:open:i-lucide-chevron-down">
-      <summary class="list-none flex select-none cursor-pointer">
-        <div class="chevron i-lucide-chevron-right text-neutral-500 mr-2 mt-1" />
-        <div class="placeholder">
+    <details open class="justify-start [&_.chevron]:open:i-lucide-chevron-down [&_.placeholder]:open:hidden [&_.chevron]:hover:text-neutral-400 [&_.chevron]:open:hover:text-text">
+      <summary class="flex cursor-pointer select-none list-none">
+        <div class="chevron i-lucide-chevron-right absolute mt-1 text-neutral-500" />
+        <div class="placeholder relative left-6">
           {props.placeholder}
         </div>
       </summary>
-      <div class="top-0 left-0">
+      <div class="relative left-6">
         {props.children}
       </div>
     </details>
