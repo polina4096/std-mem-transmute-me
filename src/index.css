@@ -18,15 +18,22 @@
 }
 
 :root.dark {
-  --color-text: #ffffff;
-  --color-bg: #1f1f1f;
-  --color-selection: #373a5b;
+  --color-text: theme("colors.neutral.50");
+  --color-bg: #1d1d1d;
+  --color-selection: #27283a;
+  --color-focus: #373959;
 }
 
 :root {
-  --color-text: #1f1f1f;
-  --color-bg: #ffffff;
-  --color-selection: #c7caeb;
+  --color-text: theme("colors.neutral.900");
+  --color-bg: theme("colors.neutral.50");
+  --color-selection: #dddeec;
+  --color-focus: #b7b9d4;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-focus);
+  border-radius: 1px;
 }
 
 details summary::-webkit-details-marker {

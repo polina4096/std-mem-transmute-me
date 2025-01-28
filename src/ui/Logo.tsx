@@ -12,7 +12,7 @@ export function Logo() {
       <div class="flex items-center text-2xl font-medium">
         <div>Function</div>
         &nbsp;
-        <div class="text-yellow-600 dark:text-green-500">transmute</div>
+        <div class="mr-3 text-yellow-600 dark:text-green-500">transmute</div>
         <CopyButton content="std::mem::transmute" />
       </div>
       <div class="flex">

@@ -19,9 +19,13 @@ export function CopyButton(props: {
   }
 
   return (
-    <div
-      class={clsx("text-neutral-500 hover:text-neutral-400 transition duration-100 ease-in-out cursor-pointer ml-3 select-none text-[21px]", active() ? "i-lucide-check" : "i-lucide-clipboard-copy")}
+    <button
+      class="m-0 cursor-pointer border-none bg-transparent p-0"
       onClick={handleClick}
-    />
+    >
+      <div
+        class={clsx("text-neutral-500 hover:text-neutral-400 transition duration-100 ease-in-out cursor-pointer select-none text-[21px]", active() ? "i-lucide-check" : "i-lucide-clipboard-copy")}
+      />
+    </button>
   );
 }

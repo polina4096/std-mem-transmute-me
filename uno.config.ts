@@ -31,6 +31,7 @@ export default defineConfig({
       text: "var(--color-text)",
       bg: "var(--color-bg)",
       selection: "var(--color-selection)",
+      focus: "var(--color-focus)",
     },
   },
 });

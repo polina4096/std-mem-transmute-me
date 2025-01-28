@@ -6,8 +6,10 @@ export function Spoiler(props: {
 }) {
   return (
     <details open class="justify-start [&_.chevron]:open:i-lucide-chevron-down [&_.placeholder]:open:hidden [&_.chevron]:hover:text-neutral-400 [&_.chevron]:open:hover:text-text">
-      <summary class="flex cursor-pointer select-none list-none">
-        <div class="chevron i-lucide-chevron-right absolute mt-1 text-neutral-500" />
+      <summary class="[&_.chevron-container]:focus-visible:outline-focus flex cursor-pointer select-none list-none focus:outline-none [&_.chevron-container]:focus-visible:rounded-0.25 [&_.chevron]:focus-visible:text-neutral-400 [&_.chevron-container]:focus-visible:outline-width-2 [&_.chevron-container]:focus-visible:outline-solid">
+        <div class="chevron-container absolute mt-1">
+          <div class="chevron i-lucide-chevron-right text-neutral-500" />
+        </div>
         <div class="placeholder relative left-6">
           {props.placeholder}
         </div>
