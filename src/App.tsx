@@ -1,11 +1,11 @@
 import { For } from "solid-js";
 import { useColorScheme } from "./components/ColorSchemeContext";
 import { ColorSchemeSwitch } from "./components/ColorSchemeSwitch";
+import { CryptoAddress } from "./components/CryptoAddress";
 import { Header } from "./components/Header";
 import { Spoiler } from "./components/Spoiler";
 import { applyColorScheme } from "./hooks/applyColorScheme";
 import { Logo } from "./ui/Logo";
-import { selectElement } from "./utils";
 
 const links = [
   {
@@ -125,23 +125,8 @@ export function App() {
               <For each={donate}>
                 {({ text, address }) => (
                   <>
-                    <div class="text-emerald-800 dark:text-emerald-500">
-                      {text}
-                    </div>
-                    <div
-                      class="cursor-pointer truncate rounded-md bg-neutral-200 px-1 font-serif active:bg-neutral-400 dark:bg-neutral-900 hover:bg-neutral-300 hover:underline dark:active:bg-neutral-700 dark:hover:bg-neutral-800"
-                      onClick={(e) => {
-                        const addr = e.target.textContent;
-                        if (!addr) {
-                          return;
-                        }
-
-                        selectElement(e.target);
-                        navigator.clipboard.writeText(addr);
-                      }}
-                    >
-                      {address}
-                    </div>
+                    <div class="text-emerald-800 dark:text-emerald-500">{text}</div>
+                    <CryptoAddress address={address} />
                   </>
                 )}
               </For>

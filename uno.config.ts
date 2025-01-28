@@ -30,6 +30,7 @@ export default defineConfig({
     colors: {
       text: "var(--color-text)",
       bg: "var(--color-bg)",
+      selection: "var(--color-selection)",
     },
   },
 });
