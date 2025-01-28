@@ -1,89 +1,14 @@
-import { For } from "solid-js";
 import { useColorScheme } from "./components/ColorSchemeContext";
 import { ColorSchemeSwitch } from "./components/ColorSchemeSwitch";
-import { CryptoAddress } from "./components/CryptoAddress";
-import { Header } from "./components/Header";
-import { Spoiler } from "./components/Spoiler";
 import { applyColorScheme } from "./hooks/applyColorScheme";
 import { Logo } from "./ui/Logo";
-
-const links = [
-  {
-    text: "Email",
-    link: "polina8192@gmail.com",
-    href: "mailto:polina8192@gmail.com",
-  },
-  {
-    text: "Telegram",
-    link: "https://t.me/polina4096",
-    href: "https://t.me/polina4096",
-  },
-  {
-    text: "Github",
-    link: "https://github.com/polina4096",
-    href: "https://github.com/polina4096",
-  },
-];
-
-const donate = [
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-bitcoin" />
-        <div>BTC</div>
-      </div>
-    ),
-    address: "bc1q4hkwmzjwgv7krprhamjzudwlhedlzftq9fuhvw",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-ethereum" />
-        <div>ETH</div>
-      </div>
-    ),
-    address: "0xdFfa9a5e7841f9dF883150beD2d890c2FA7fC5dA",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-binance-smart-chain" />
-        <div>BSC</div>
-      </div>
-    ),
-    address: "0xdFfa9a5e7841f9dF883150beD2d890c2FA7fC5dA",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-xmr" />
-        <div>XMR</div>
-      </div>
-    ),
-    address: "89tk2qoLxj2QUhXy9p67mJBW6cnLeDU79KWzeq5wSuqQjRsAgqFV8GCUstsNWVRkouiTZy2DWUdAs4A6gt8J2GrXRTnEWif",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-tron" />
-        <div>TRON</div>
-      </div>
-    ),
-    address: "TWAeXM8fApkhY3gbzcpAkYcQfDo3ZdKu94",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-ton" />
-        <div>TON</div>
-      </div>
-    ),
-    address: "UQAQ_as5gswHuaiuYWe1y1xzi_pMgziZb4stVta_BqqsDDNv",
-  },
-];
+import { DonateSection } from "./ui/sections/DonateSection";
+import { InfoSection } from "./ui/sections/InfoSection";
+import { LinksSection } from "./ui/sections/LinksSection";
 
 export function App() {
   const [colorScheme] = useColorScheme() ?? [() => "system"];
+
   applyColorScheme(colorScheme);
 
   return (
@@ -94,44 +19,9 @@ export function App() {
           <ColorSchemeSwitch />
         </div>
         <div class="flex flex-col gap-6">
-          <Spoiler placeholder={<div class="text-neutral-500">Expand description</div>}>
-            <div class="flex flex-col gap-3 font-serif">
-              <div>
-                Hi, I'm Полина.
-              </div>
-              <div>Rust enthusiast, full-stack software developer. I work on all kinds of things, yet game development, graphics and compiler development are my favorite.</div>
-            </div>
-          </Spoiler>
-          <div class="flex flex-col gap-2">
-            <Header title="Links" separator />
-            <div class="grid grid-cols-[1fr_2fr]">
-              <For each={links}>
-                {({ text, link, href }) => (
-                  <>
-                    <div class="text-fuchsia-700 dark:text-teal-500">
-                      {text}
-                    </div>
-                    <a class="text-text font-serif decoration-none hover:underline" href={href}>
-                      {link}
-                    </a>
-                  </>
-                )}
-              </For>
-            </div>
-          </div>
-          <div class="flex flex-col gap-2">
-            <Header title="Donate" separator />
-            <div class="grid grid-cols-[1fr_2fr] gap-0.5">
-              <For each={donate}>
-                {({ text, address }) => (
-                  <>
-                    <div class="text-emerald-800 dark:text-emerald-500">{text}</div>
-                    <CryptoAddress address={address} />
-                  </>
-                )}
-              </For>
-            </div>
-          </div>
+          <InfoSection />
+          <LinksSection />
+          <DonateSection />
         </div>
       </div>
     </div>
