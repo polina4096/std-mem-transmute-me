@@ -12,6 +12,7 @@ export default defineConfig({
     presetIcons({
       collections: {
         lucide: () => import("@iconify-json/lucide/icons.json").then(i => i.default),
+        web3: () => import("@iconify-json/token/icons.json").then(i => i.default),
       },
     }),
     presetWebFonts({
