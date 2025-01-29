@@ -42,10 +42,10 @@ importers:
       '@unocss/preset-rem-to-px':
         specifier: ^65.4.3
         version: 65.4.3
-      '@unocss/preset-web-fonts':
+      '@unocss/preset-uno':
         specifier: ^65.4.3
         version: 65.4.3
-      '@unocss/preset-wind':
+      '@unocss/preset-web-fonts':
         specifier: ^65.4.3
         version: 65.4.3
       '@unocss/transformer-directives':

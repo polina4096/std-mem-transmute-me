@@ -1,14 +1,14 @@
 import presetIcons from "@unocss/preset-icons";
 import presetRemToPx from "@unocss/preset-rem-to-px";
+import presetUno from "@unocss/preset-uno";
 import presetWebFonts from "@unocss/preset-web-fonts";
-import presetWind from "@unocss/preset-wind";
 import transformerDirectives from "@unocss/transformer-directives";
 import { defineConfig } from "unocss";
 
 export default defineConfig({
   presets: [
     presetRemToPx(),
-    presetWind(),
+    presetUno(),
     presetIcons({
       collections: {
         lucide: () => import("@iconify-json/lucide/icons.json").then(i => i.default),
