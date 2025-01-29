@@ -48,9 +48,6 @@ importers:
       '@unocss/preset-wind':
         specifier: ^65.4.3
         version: 65.4.3
-      '@unocss/transformer-compile-class':
-        specifier: ^65.4.3
-        version: 65.4.3
       '@unocss/transformer-directives':
         specifier: ^65.4.3
         version: 65.4.3
