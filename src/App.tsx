@@ -27,7 +27,7 @@ export function App() {
             <DonateSection />
           </div>
         </div>
-        <div class="w-full py-4">
+        <div class="w-full px-8 py-4">
           <Webring model={rutg.webring(import.meta.env.WEBRING_RUTG_CTX)} />
         </div>
       </div>
