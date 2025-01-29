@@ -3,6 +3,7 @@ import { createSignal } from "solid-js";
 
 export function CopyButton(props: {
   content: string;
+  duration?: number;
 }) {
   const [active, setActive] = createSignal(false);
   let timeout: number | undefined;
@@ -13,7 +14,7 @@ export function CopyButton(props: {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       setActive(false);
-    }, 1000);
+    }, props.duration ?? 800);
 
     setActive(true);
   }
