@@ -11,6 +11,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-dark-text: theme("colors.neutral.50");
+  --color-dark-bg: #1d1d1d;
+  --color-dark-selection: #27283a;
+  --color-dark-focus: #373959;
+
+  --color-light-text: theme("colors.neutral.900");
+  --color-light-bg: theme("colors.neutral.50");
+  --color-light-selection: #dddeec;
+  --color-light-focus: #b7b9d4;
 }
 
 *::selection {
@@ -18,17 +28,17 @@
 }
 
 :root.dark {
-  --color-text: theme("colors.neutral.50");
-  --color-bg: #1d1d1d;
-  --color-selection: #27283a;
-  --color-focus: #373959;
+  --color-text: var(--color-dark-text);
+  --color-bg: var(--color-dark-bg);
+  --color-selection: var(--color-dark-selection);
+  --color-focus: var(--color-dark-focus);
 }
 
 :root {
-  --color-text: theme("colors.neutral.900");
-  --color-bg: theme("colors.neutral.50");
-  --color-selection: #dddeec;
-  --color-focus: #b7b9d4;
+  --color-text: var(--color-light-text);
+  --color-bg: var(--color-light-bg);
+  --color-selection: var(--color-light-selection);
+  --color-focus: var(--color-light-focus);
 }
 
 *:focus-visible {
