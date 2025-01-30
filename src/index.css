@@ -51,5 +51,5 @@ details summary::-webkit-details-marker {
 }
 
 .link {
-  @apply text-sky-700 dark:text-yellow-500 decoration-none hover:underline;
+  --uno-apply: "text-sky-700 dark:text-yellow-500 decoration-none hover:underline";
 }

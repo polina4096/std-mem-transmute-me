@@ -5,8 +5,8 @@ export function Spoiler(props: {
   placeholder: JSX.Element;
 }) {
   return (
-    <details open class="justify-start [&_.chevron]:open:i-lucide-chevron-down [&_.placeholder]:open:hidden [&_.chevron]:hover:text-neutral-400 [&_.chevron]:open:hover:text-text">
-      <summary class="flex cursor-pointer select-none list-none focus:outline-none [&_.chevron-container]:focus-visible:rounded-0.25 [&_.chevron]:focus-visible:text-neutral-400 [&_.chevron-container]:focus-visible:outline-width-2 [&_.chevron-container]:focus-visible:outline-focus [&_.chevron-container]:focus-visible:outline-solid">
+    <details open class=":uno: justify-start [&_.chevron]:open:i-lucide-chevron-down [&_.placeholder]:open:hidden [&_.chevron]:hover:text-neutral-400 [&_.chevron]:open:hover:text-text">
+      <summary class=":uno: flex cursor-pointer select-none list-none focus:outline-none [&_.chevron-container]:focus-visible:rounded-0.25 [&_.chevron]:focus-visible:text-neutral-400 [&_.chevron-container]:focus-visible:outline-width-2 [&_.chevron-container]:focus-visible:outline-focus [&_.chevron-container]:focus-visible:outline-solid">
         <div class="chevron-container absolute mt-1">
           <div class="chevron i-lucide-chevron-right text-neutral-500" />
         </div>
