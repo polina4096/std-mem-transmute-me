@@ -30,7 +30,7 @@ export function CryptoAddress(props: {
   }
 
   return (
-    <div class="relative min-w-0 [&_.active-icon]:hover:block">
+    <div class="relative min-w-0 [&_.active-icon]:hover:bg-neutral-100">
       <div
         tabindex="0"
         class=":uno: cursor-pointer truncate rounded-md bg-neutral-100 px-1 font-serif active:bg-neutral-300 dark:bg-neutral-900 focus:bg-selection hover:underline [&:not(:focus)]:hover:bg-neutral-200 active:selection:bg-transparent dark:active:bg-neutral-700 dark:[&:not(:focus)]:hover:bg-neutral-800"
@@ -39,7 +39,10 @@ export function CryptoAddress(props: {
         {props.address}
       </div>
       <Show when={props.showCopyIcon ?? true}>
-        <div class={clsx("active-icon hidden absolute top-1/2 translate-y-[-50%] -right-5", active() ? "i-lucide-check" : "i-lucide-copy")} />
+        <div
+          class={clsx("active-icon bg-transparent hover:bg-neutral-100 cursor-pointer absolute top-1/2 translate-y-[-50%] -right-6 pl-2 box-content", active() ? "i-lucide-check" : "i-lucide-copy")}
+          onClick={handleClick}
+        />
       </Show>
     </div>
   );
