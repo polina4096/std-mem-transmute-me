@@ -14,12 +14,12 @@
 
   --color-dark-text: theme("colors.neutral.50");
   --color-dark-bg: #1d1d1d;
-  --color-dark-selection: #27283a;
+  --color-dark-selection: #2e2f42;
   --color-dark-focus: #373959;
 
   --color-light-text: theme("colors.neutral.900");
   --color-light-bg: theme("colors.neutral.50");
-  --color-light-selection: #dddeec;
+  --color-light-selection: #d7d8e8;
   --color-light-focus: #b7b9d4;
 }
 
