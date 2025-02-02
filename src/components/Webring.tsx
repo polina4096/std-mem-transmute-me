@@ -1,4 +1,5 @@
 import { createSignal, onMount, Show } from "solid-js";
+import { TextSkeleton } from "./TextSkeleton";
 
 export interface WebringModel {
   name: string;
@@ -29,12 +30,16 @@ export function Webring(props: { model: WebringModel }) {
         <a class="i-lucide-move-right block" href={props.model.next} />
       </div>
 
-      <Show when={info()}>
-        {info => <a class="absolute bottom-0 left-0 hidden text-text decoration-none @sm:block hover:underline" href={props.model.prev}>{info().prev.name}</a>}
-      </Show>
-      <Show when={info()}>
-        {info => <a class="absolute bottom-0 right-0 hidden text-text decoration-none @sm:block hover:underline" href={props.model.next}>{info().next.name}</a>}
-      </Show>
+      <div class="absolute left-0 top-1/2 inline hidden translate-y-[-50%] @sm:block">
+        <Show when={info()} fallback={<TextSkeleton min={48} max={96} />}>
+          {info => <a class="text-text decoration-none hover:underline" href={props.model.prev}>{info().prev.name}</a>}
+        </Show>
+      </div>
+      <div class="absolute right-0 top-1/2 inline hidden translate-y-[-50%] @sm:block">
+        <Show when={info()} fallback={<TextSkeleton min={48} max={96} />}>
+          {info => <a class="text-text decoration-none hover:underline" href={props.model.next}>{info().next.name}</a>}
+        </Show>
+      </div>
     </div>
   );
 }
