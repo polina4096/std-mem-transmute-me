@@ -30,7 +30,7 @@ export function CryptoAddress(props: {
   }
 
   return (
-    <div class="relative min-w-0 [&_.active-icon]:hover:bg-text">
+    <div class="relative min-w-0 [&_.active-icon]:hover:bg-text" title={props.address}>
       <div
         tabindex="0"
         class=":uno: cursor-pointer truncate rounded-md bg-neutral-100 px-1 font-serif active:bg-neutral-300 dark:bg-neutral-900 focus:bg-selection hover:underline [&:not(:focus)]:hover:bg-neutral-200 active:selection:bg-transparent dark:active:bg-neutral-700 dark:[&:not(:focus)]:hover:bg-neutral-800"
