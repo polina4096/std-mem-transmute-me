@@ -2,6 +2,7 @@ import type { DOMElement } from "solid-js/jsx-runtime";
 import clsx from "clsx";
 import { createSignal, Show } from "solid-js";
 import { selectElement } from "../utils";
+import { MidEllipsis } from "./MidEllipsis";
 
 export function CryptoAddress(props: {
   address: string;
@@ -33,10 +34,10 @@ export function CryptoAddress(props: {
     <div class="relative min-w-0 [&_.active-icon]:hover:bg-text" title={props.address}>
       <div
         tabindex="0"
-        class=":uno: cursor-pointer truncate rounded-md bg-neutral-100 px-1 font-serif active:bg-neutral-300 dark:bg-neutral-900 focus:bg-selection hover:underline [&:not(:focus)]:hover:bg-neutral-200 active:selection:bg-transparent dark:active:bg-neutral-700 dark:[&:not(:focus)]:hover:bg-neutral-800"
+        class=":uno: cursor-pointer rounded-md bg-neutral-100 px-1 font-serif active:bg-neutral-300 dark:bg-neutral-900 focus:bg-selection hover:underline [&:not(:focus)]:hover:bg-neutral-200 active:selection:bg-transparent dark:active:bg-neutral-700 dark:[&:not(:focus)]:hover:bg-neutral-800"
         onClick={handleClick}
       >
-        {props.address}
+        <MidEllipsis text={props.address} endChars={7} />
       </div>
       <Show when={props.showCopyIcon ?? true}>
         <div
