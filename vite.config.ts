@@ -8,7 +8,7 @@ const browsers = "defaults and fully supports es6-module and not and_uc > 0 and 
 
 export default defineConfig({
   define: {
-    "import.meta.env.WEBRING_RUTG_CTX": "23",
+    "import.meta.env.WEBRING_RUTG_CTX": "'polina4096'",
   },
   plugins: [
     UnoCSS(),
