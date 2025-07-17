@@ -1,5 +1,6 @@
 import { useColorScheme } from "./components/ColorSchemeContext";
 import { ColorSchemeSwitch } from "./components/ColorSchemeSwitch";
+import { HoverDrawer } from "./components/HoverDrawer";
 import { Webring } from "./components/Webring";
 import { applyColorScheme } from "./hooks/applyColorScheme";
 import { Logo } from "./ui/Logo";
@@ -28,8 +29,12 @@ export function App() {
             <DonateSection />
           </div>
         </div>
-        <div class="w-full flex flex-col gap-4 px-8 py-4">
-          <BannerSection banners={import.meta.env.BANNERS_88_31} />
+        <div class="w-full flex flex-col gap-2 px-8 py-4">
+          <div class="w-full flex justify-center">
+            <HoverDrawer fallback={<div>Show 88x31s</div>}>
+              <BannerSection banners={import.meta.env.BANNERS_88_31} />
+            </HoverDrawer>
+          </div>
           <Webring model={rutg.webring(import.meta.env.WEBRING_RUTG_CTX)} />
         </div>
       </div>

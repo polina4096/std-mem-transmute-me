@@ -26,7 +26,7 @@ export function Banner(props: {} & BannerModel) {
           src={props.src}
           alt={props.alt}
           onLoad={() => setLoaded(true)}
-          class=":uno: pixelated h-[31px] w-[88px] hover:outline-2 hover:outline-text hover:outline-solid"
+          class=":uno: h-[31px] w-[88px] pixelated hover:outline-2 hover:outline-text hover:outline-solid"
         />
       </a>
     </div>
