@@ -26,10 +26,10 @@ export function App() {
             <InfoSection />
             <LinksSection />
             <DonateSection />
-            <BannerSection banners={import.meta.env.BANNERS_88_31} />
           </div>
         </div>
-        <div class="w-full px-8 py-4">
+        <div class="w-full flex flex-col gap-4 px-8 py-4">
+          <BannerSection banners={import.meta.env.BANNERS_88_31} />
           <Webring model={rutg.webring(import.meta.env.WEBRING_RUTG_CTX)} />
         </div>
       </div>
