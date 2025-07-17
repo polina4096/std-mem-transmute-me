@@ -6,7 +6,7 @@ export function BannerSection(props: {
   banners: BannerModel[];
 }) {
   return (
-    <div class="flex flex-wrap justify-center gap-1">
+    <div class="flex flex-wrap justify-center gap-1 -mx-2">
       <For each={props.banners}>
         {banner => (
           <Banner src={banner.src} href={banner.href} />
