@@ -43,4 +43,7 @@ export default defineConfig({
       focus: "var(--color-focus)",
     },
   },
+  rules: [
+    ["pixelated", { "image-rendering": "pixelated" }],
+  ],
 });

@@ -3,6 +3,7 @@ import { ColorSchemeSwitch } from "./components/ColorSchemeSwitch";
 import { Webring } from "./components/Webring";
 import { applyColorScheme } from "./hooks/applyColorScheme";
 import { Logo } from "./ui/Logo";
+import { BannerSection } from "./ui/sections/BannerSection";
 import { DonateSection } from "./ui/sections/DonateSection";
 import { InfoSection } from "./ui/sections/InfoSection";
 import { LinksSection } from "./ui/sections/LinksSection";
@@ -25,6 +26,7 @@ export function App() {
             <InfoSection />
             <LinksSection />
             <DonateSection />
+            <BannerSection banners={import.meta.env.BANNERS_88_31} />
           </div>
         </div>
         <div class="w-full px-8 py-4">

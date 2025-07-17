@@ -9,6 +9,13 @@ const browsers = "defaults and fully supports es6-module and not and_uc > 0 and 
 export default defineConfig({
   define: {
     "import.meta.env.WEBRING_RUTG_CTX": "'polina4096'",
+    "import.meta.env.BANNERS_88_31":
+      [
+        { src: "https://std.mem.transmute.me/88x31/polina4096.png", href: "https://std.mem.transmute.me", alt: "polina4096" },
+        { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
+        { src: "https://tei.su/88x31/teidesu.png", href: "https://tei.su", alt: "teidesu" },
+        { src: "https://tei.su/88x31/stupid.fish.png", href: "https://stupid.fish", alt: "stupid.fish" },
+      ],
   },
   plugins: [
     UnoCSS(),
