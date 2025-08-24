@@ -5,6 +5,7 @@ export interface WebringModel {
   name: string;
   url: string;
   context: string;
+  suffix?: boolean;
   readonly next: string;
   readonly prev: string;
   readonly info: Promise<{
@@ -26,7 +27,7 @@ export function Webring(props: { model: WebringModel }) {
     <div class="relative" style={{ "container-type": "inline-size" }}>
       <div class="flex items-center justify-center gap-2">
         <a class="i-lucide-move-left block" href={props.model.prev} />
-        <a class="link" href={props.model.url}>{`[${props.model.name} webring]`}</a>
+        <a class="link" href={props.model.url}>{`[${props.model.name}${props.model.suffix ? " webring" : ""}]`}</a>
         <a class="i-lucide-move-right block" href={props.model.next} />
       </div>
 

@@ -1,7 +1,7 @@
 import type { WebringModelFactory } from "../components/Webring";
 
 export const webring: WebringModelFactory = context => ({
-  name: "rutg",
+  name: "otoring",
   url: "https://webring.otomir23.me",
   context,
   get next() { return `https://webring.otomir23.me/${this.context}/next`; },

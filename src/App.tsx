@@ -7,7 +7,7 @@ import { BannerSection } from "./ui/sections/BannerSection";
 import { DonateSection } from "./ui/sections/DonateSection";
 import { InfoSection } from "./ui/sections/InfoSection";
 import { LinksSection } from "./ui/sections/LinksSection";
-import * as rutg from "./webrings/rutg";
+import * as rutg from "./webrings/otoring";
 
 export function App() {
   const [colorScheme] = useColorScheme() ?? [() => "system"];

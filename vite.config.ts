@@ -12,10 +12,15 @@ export default defineConfig({
     "import.meta.env.BANNERS_88_31":
       [
         { src: "https://std.mem.transmute.me/88x31/polina4096.png", href: "https://std.mem.transmute.me", alt: "polina4096" },
-        { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
         { src: "https://tei.su/88x31/teidesu.png", href: "https://tei.su", alt: "teidesu" },
+        { src: "https://jsopn.com/images/88x31/button.gif", href: "https://jsopn.com/?glunging=true", alt: "jsopn" },
+        { src: "https://jsopn.com/images/88x31/senko.gif", href: "https://senko.dev/", alt: "senkodev" },
+        { src: "https://oat.zone/badges/oatzone.gif", href: "https://oat.zone/", alt: "oatmealine" },
+        { src: "https://oat.zone/badges/oatzonealt.png", href: "https://oat.zone/", alt: "oatmealine (alt)" },
+        { src: "https://adryd.com/static/buttons/adryd.png", href: "https://adryd.com/", alt: "adryd" },
         { src: "https://tei.su/88x31/stupid.fish.png", href: "https://stupid.fish", alt: "stupid.fish" },
         { src: "https://std.mem.transmute.me/88x31/krill_cool.jpg", href: "https://krill.cool", alt: "krill.cool" },
+        { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
         { src: "https://std.mem.transmute.me/88x31/zed.png", href: "https://zed.dev", alt: "Zed" },
       ],
   },
