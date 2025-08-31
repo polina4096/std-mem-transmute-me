@@ -11,7 +11,7 @@ export default defineConfig({
     "import.meta.env.WEBRING_RUTG_CTX": "'polina4096'",
     "import.meta.env.BANNERS_88_31":
       [
-        { src: "https://std.mem.transmute.me/88x31/polina4096.png", href: "https://std.mem.transmute.me", alt: "polina4096" },
+        { src: "https://std.mem.transmute.me/88x31/transmute.png", href: "https://std.mem.transmute.me", alt: "std.mem.transmute.me" },
         { src: "https://tei.su/88x31/teidesu.png", href: "https://tei.su", alt: "teidesu" },
         { src: "https://jsopn.com/images/88x31/button.gif", href: "https://jsopn.com/?glunging=true", alt: "jsopn" },
         { src: "https://jsopn.com/images/88x31/senko.gif", href: "https://senko.dev/", alt: "senkodev" },
