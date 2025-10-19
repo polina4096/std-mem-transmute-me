@@ -18,6 +18,7 @@ export default defineConfig({
         { src: "https://oat.zone/badges/oatzone.gif", href: "https://oat.zone/", alt: "oatmealine" },
         { src: "https://oat.zone/badges/oatzonealt.png", href: "https://oat.zone/", alt: "oatmealine (alt)" },
         { src: "https://adryd.com/static/buttons/adryd.png", href: "https://adryd.com/", alt: "adryd" },
+        { src: "https://x86.pet/~strawberry/june_88x31.png", href: "https://x86.pet/", alt: "june" },
         { src: "https://tei.su/88x31/stupid.fish.png", href: "https://stupid.fish", alt: "stupid.fish" },
         { src: "https://std.mem.transmute.me/88x31/krill_cool.jpg", href: "https://krill.cool", alt: "krill.cool" },
         { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
