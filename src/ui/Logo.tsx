@@ -18,8 +18,9 @@ export function Logo() {
       <div class="flex">
         <div class="text-neutral-500">Since 1.0.0 (const: 1.56.0)</div>
         <div>&nbsp;·&nbsp;</div>
-        <a class="link" href="https://doc.rust-lang.org/src/core/intrinsics/mod.rs.html#1918">Source</a>
+        <a class="link" href="https://github.com/polina4096/std-mem-transmute-me">Source</a>
       </div>
     </div>
   );
 }
+
