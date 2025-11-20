@@ -6,7 +6,7 @@ export function ToggleSpoiler(props: {
 }) {
   return (
     <details class="[&_.indicator-close]:open:block [&_.indicator-open]:open:hidden">
-      <summary class="relative cursor-pointer select-none select-none list-none text-neutral-500 hover:text-text [&_.summary-content]:focus:text-text">
+      <summary class="text-detail relative cursor-pointer select-none select-none list-none hover:text-text [&_.summary-content]:focus:text-text">
         <div
           class="summary-content absolute flex pr-1.5 -left-6"
         >

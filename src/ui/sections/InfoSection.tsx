@@ -2,7 +2,7 @@ import { Spoiler } from "../../components/Spoiler";
 
 export function InfoSection() {
   return (
-    <Spoiler placeholder={<div class="text-neutral-500">Expand description</div>}>
+    <Spoiler placeholder={<div class="text-detail">Expand description</div>}>
       <div class="flex flex-col gap-3 font-serif">
         <div>
           Hi, I'm

@@ -27,7 +27,7 @@ export function LinksSection() {
         <For each={links}>
           {({ text, link, href }) => (
             <>
-              <div class="text-fuchsia-700 dark:text-teal-500">{text}</div>
+              <div class="text-color-b">{text}</div>
               <a class="text-text font-serif decoration-none hover:underline" href={href}>{link}</a>
             </>
           )}

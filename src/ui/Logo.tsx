@@ -12,15 +12,14 @@ export function Logo() {
       <div class="flex items-center text-2xl font-medium">
         <div>Function</div>
         &nbsp;
-        <div class="mr-3 text-yellow-600 dark:text-green-500">transmute</div>
+        <div class="text-color-logo mr-3">transmute</div>
         <CopyButton content="std::mem::transmute" />
       </div>
       <div class="flex">
-        <div class="text-neutral-500">Since 1.0.0 (const: 1.56.0)</div>
+        <div class="text-detail">Since 1.0.0 (const: 1.56.0)</div>
         <div>&nbsp;·&nbsp;</div>
         <a class="link" href="https://github.com/polina4096/std-mem-transmute-me">Source</a>
       </div>
     </div>
   );
 }
-

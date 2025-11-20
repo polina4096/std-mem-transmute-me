@@ -39,9 +39,18 @@ export default defineConfig({
     colors: {
       text: "var(--color-text)",
       bg: "var(--color-bg)",
+      link: "var(--color-link)",
+      detail: "var(--color-detail)",
       selection: "var(--color-selection)",
       focus: "var(--color-focus)",
+      logo: "var(--color-logo)",
+      a: "var(--color-a)",
+      b: "var(--color-b)",
+      c: "var(--color-c)",
     },
+  },
+  shortcuts: {
+    highlight: "filter-brightness-[135%]",
   },
   rules: [
     ["pixelated", { "image-rendering": "pixelated" }],

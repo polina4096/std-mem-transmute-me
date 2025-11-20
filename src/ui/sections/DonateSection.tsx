@@ -106,7 +106,7 @@ export function DonateSection() {
         <For each={donate}>
           {({ text, address }) => (
             <>
-              <div class="text-emerald-800 dark:text-emerald-500">{text}</div>
+              <div class="text-color-a">{text}</div>
               <CryptoAddress address={address} />
             </>
           )}
@@ -119,7 +119,7 @@ export function DonateSection() {
           <For each={donateMore}>
             {({ text, address }) => (
               <>
-                <div class="text-emerald-800 dark:text-emerald-500">{text}</div>
+                <div class="text-color-a">{text}</div>
                 <CryptoAddress address={address} />
               </>
             )}
