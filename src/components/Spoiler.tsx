@@ -5,10 +5,10 @@ export function Spoiler(props: {
   placeholder: JSX.Element;
 }) {
   return (
-    <details open class=":uno: [&_.chevron]:hover:text-detail [&_.chevron]:hover:highlight justify-start [&_.chevron]:open:i-lucide-chevron-down [&_.placeholder]:open:hidden [&_.chevron]:open:hover:text-text">
-      <summary class=":uno: [&_.chevron]:focus-visible:text-detail [&_.chevron]:focus-visible:hightlight flex cursor-pointer select-none list-none focus:outline-none [&_.chevron-container]:focus-visible:rounded-0.25 [&_.chevron-container]:focus-visible:outline-width-2 [&_.chevron-container]:focus-visible:outline-focus [&_.chevron-container]:focus-visible:outline-solid">
+    <details open class=":uno: [&_.chevron]:open:i-lucide-chevron-down justify-start [&_.chevron]:hover:highlight [&_.placeholder]:open:hidden [&_.chevron]:hover:text-detail [&_.chevron]:open:hover:text-text">
+      <summary class=":uno: [&_.chevron]:focus-visible:hightlight flex cursor-pointer select-none list-none focus:outline-none [&_.chevron-container]:focus-visible:rounded-0.25 [&_.chevron]:focus-visible:text-detail [&_.chevron-container]:focus-visible:outline-width-2 [&_.chevron-container]:focus-visible:outline-focus [&_.chevron-container]:focus-visible:outline-solid">
         <div class="chevron-container absolute mt-1">
-          <div class="chevron text-detail i-lucide-chevron-right" />
+          <div class="chevron i-lucide-chevron-right text-detail" />
         </div>
         <div class="placeholder relative left-6">
           {props.placeholder}
