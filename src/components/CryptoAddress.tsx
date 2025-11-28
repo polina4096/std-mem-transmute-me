@@ -40,7 +40,7 @@ export function CryptoAddress(props: {
       </div>
       <Show when={props.showCopyIcon ?? true}>
         <div
-          class={clsx("active-icon bg-transparent cursor-pointer absolute top-1/2 translate-y-[-50%] -right-6 pl-2 box-content", active() ? "i-lucide-check" : "i-lucide-copy")}
+          class={clsx("active-icon absolute top-1/2 box-content translate-y-[-50%] cursor-pointer bg-transparent pl-2 -right-6", active() ? "i-lucide-check" : "i-lucide-copy")}
           onClick={handleClick}
         />
       </Show>

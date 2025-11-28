@@ -25,7 +25,7 @@ export function CopyButton(props: {
       onClick={handleClick}
     >
       <div
-        class={clsx("text-neutral-500 hover:text-neutral-400 transition duration-100 ease-in-out cursor-pointer select-none text-[21px]", active() ? "i-lucide-check" : "i-lucide-clipboard-copy")}
+        class={clsx("cursor-pointer select-none text-[21px] text-neutral-500 transition duration-100 ease-in-out hover:text-neutral-400", active() ? "i-lucide-check" : "i-lucide-clipboard-copy")}
       />
     </button>
   );
