@@ -52,7 +52,4 @@ export default defineConfig({
   shortcuts: {
     highlight: "filter-brightness-[135%]",
   },
-  rules: [
-    ["pixelated", { "image-rendering": "pixelated" }],
-  ],
 });
