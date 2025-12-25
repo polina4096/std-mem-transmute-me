@@ -13,7 +13,7 @@ export default defineConfig({
       [
         { src: "https://std.mem.transmute.me/88x31/transmute.png", href: "https://std.mem.transmute.me", alt: "std.mem.transmute.me" },
         { src: "https://tei.su/88x31/teidesu.png", href: "https://tei.su", alt: "teidesu" },
-        { src: "https://nika.gay/assets/88x31/nikakasd.png", href: "https://nika.gay", alt: "nika" },
+        { src: "https://femboy.page/_astro/devilreef.CzSmP4H5.png", href: "https://femboy.page", alt: "devilreef" },
         { src: "https://jsopn.com/images/88x31/button.gif", href: "https://jsopn.com/?glunging=true", alt: "jsopn" },
         { src: "https://senko.dev/banners/senko.gif", href: "https://senko.dev", alt: "senkodev" },
         { src: "https://oat.zone/badges/oatzone.gif", href: "https://oat.zone", alt: "oatmealine" },
