@@ -23,6 +23,7 @@ export function CopyButton(props: {
     <button
       class="m-0 cursor-pointer border-none bg-transparent p-0"
       onClick={handleClick}
+      aria-label="Copy"
     >
       <div
         class={clsx("cursor-pointer select-none text-[21px] text-neutral-500 transition duration-100 ease-in-out hover:text-neutral-400", active() ? "i-lucide-check" : "i-lucide-clipboard-copy")}

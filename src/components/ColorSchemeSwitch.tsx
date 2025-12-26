@@ -24,6 +24,7 @@ export function ColorSchemeSwitch() {
       <button
         class="m-0 cursor-pointer border-none bg-transparent p-0"
         onClick={() => setShowMenu(!showMenu())}
+        aria-label="Switch color scheme"
       >
         <div class="i-lucide-sun text-[21px] text-neutral-500 transition duration-100 ease-in-out hover:text-neutral-400" />
       </button>
@@ -34,6 +35,7 @@ export function ColorSchemeSwitch() {
               <button
                 class={clsx("m-0 cursor-pointer border-none bg-transparent p-0 text-[16px] text-neutral-500 font-sans hover:text-neutral-400 hover:dark:text-neutral-100", colorScheme() === current && "after:absolute after:right-[-12px] after:content-['•']")}
                 onClick={() => handleClick(current)}
+                aria-label={`Switch to ${current} color scheme`}
               >
                 {current}
               </button>

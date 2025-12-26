@@ -26,9 +26,9 @@ export function Webring(props: { model: WebringModel }) {
   return (
     <div class="relative" style={{ "container-type": "inline-size" }}>
       <div class="flex items-center justify-center gap-2">
-        <a class="i-lucide-move-left block" href={props.model.prev} />
+        <a class="i-lucide-move-left block" href={props.model.prev} aria-label="Previous website" />
         <a class="link" href={props.model.url}>{`[${props.model.name}${props.model.suffix ? " webring" : ""}]`}</a>
-        <a class="i-lucide-move-right block" href={props.model.next} />
+        <a class="i-lucide-move-right block" href={props.model.next} aria-label="Next website" />
       </div>
 
       <div class="absolute left-0 top-1/2 inline hidden translate-y-[-50%] @sm:block">
