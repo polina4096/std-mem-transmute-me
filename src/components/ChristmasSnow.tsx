@@ -45,7 +45,7 @@ export function ChristmasSnow() {
               "opacity": flake.opacity,
             }}
           >
-            <div class="h-full w-full rounded-full bg-white shadow-sm" />
+            <div class="h-full w-full rounded-full bg-neutral-300 dark:bg-white" />
           </div>
         )}
       </For>
