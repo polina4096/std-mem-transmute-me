@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-const separatorClasses = ":uno: before:absolute before:w-full before:-left-1 before:bottom-0 before:block before:content-[''] before:border-b-[1px] before:border-b-solid before:border-text";
+const separatorClasses = ":uno: before:absolute before:w-full before:bottom-0 before:block before:content-[''] before:border-b-[1px] before:border-b-solid before:border-text";
 
 export function Header(props: {
   title: string;
