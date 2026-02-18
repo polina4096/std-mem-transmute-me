@@ -40,20 +40,11 @@ const donate: DonateOption[] = [
   {
     text: (
       <div class="flex items-center gap-1">
-        <div class="i-token-binance-smart-chain" />
-        <div>BSC</div>
+        <div class="i-token-solana" />
+        <div>SOL</div>
       </div>
     ),
-    address: "0x0Ac5DE6A511fB67C9a10428d4828996c559Cdbca",
-  },
-  {
-    text: (
-      <div class="flex items-center gap-1">
-        <div class="i-token-tron" />
-        <div>TRON</div>
-      </div>
-    ),
-    address: "TWAeXM8fApkhY3gbzcpAkYcQfDo3ZdKu94",
+    address: "CP9qEdacUBhxV7QruyLEvyihtZkgdwVrafm4PKtZzUX8",
   },
   {
     text: (
@@ -79,20 +70,20 @@ const donateMore: DonateOption[] = [
   {
     text: (
       <div class="flex items-center gap-1">
-        <div class="i-token-solana" />
-        <div>SOL</div>
+        <div class="i-token-tron" />
+        <div>TRON</div>
       </div>
     ),
-    address: "CP9qEdacUBhxV7QruyLEvyihtZkgdwVrafm4PKtZzUX8",
+    address: "TWAeXM8fApkhY3gbzcpAkYcQfDo3ZdKu94",
   },
   {
     text: (
       <div class="flex items-center gap-1">
-        <div class="i-token-near" />
-        <div>NEAR</div>
+        <div class="i-token-binance-smart-chain" />
+        <div>BSC</div>
       </div>
     ),
-    address: "181718e9a51e8fb102e3f81b70a06e53d2b52c7f26b59c4ef50476cc1d9903c8",
+    address: "0x0Ac5DE6A511fB67C9a10428d4828996c559Cdbca",
   },
 ];
 
