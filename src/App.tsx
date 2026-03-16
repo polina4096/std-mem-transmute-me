@@ -17,7 +17,7 @@ export function App() {
 
   return (
     <div class="w-full flex flex-col items-center">
-      <ChristmasSnow />
+      {/*<ChristmasSnow />*/}
       <div class="max-w-[640px] flex flex-col justify-between min-h-dvh">
         <div class="mx-10 flex flex-col gap-6 pt-8">
           <div class="flex justify-between">
