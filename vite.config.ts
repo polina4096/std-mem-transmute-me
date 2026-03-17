@@ -23,12 +23,12 @@ export default defineConfig({
         { src: "https://vmfunc.gg/button.png", href: "https://vmfunc.gg", alt: "celeste" },
         { src: "https://notnite.com/buttons/notnite.png", href: "https://notnite.com", alt: "notnite" },
         { src: "https://notnite.com/buttons/88x31.png", href: "https://eightyeightthirty.one", alt: "eightyeightthirty.one" },
+        { src: "https://aria.florenko.moe/88x31/me.gif", href: "https://aria.florenko.moe/", alt: "Aria Florenko" },
         { src: "https://tei.su/88x31/stupid.fish.png", href: "https://stupid.fish", alt: "stupid.fish" },
         { src: "https://std.mem.transmute.me/88x31/krill_cool.jpg", href: "https://krill.cool", alt: "krill.cool" },
         { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
         { src: "https://std.mem.transmute.me/88x31/zed.png", href: "https://zed.dev", alt: "Zed" },
         { src: "https://www.pitan76.net/image/banner88x31.png", href: "https://pitan76.net", alt: "Pitan" },
-
       ],
   },
   plugins: [
