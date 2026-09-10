@@ -19,7 +19,7 @@ export default defineConfig({
         { src: "https://oat.zone/badges/oatzone.gif", href: "https://oat.zone", alt: "oatmealine" },
         { src: "https://oat.zone/badges/oatzonealt.png", href: "https://oat.zone", alt: "oatmealine (alt)" },
         { src: "https://adryd.com/static/buttons/adryd.png", href: "https://adryd.com", alt: "adryd" },
-        { src: "https://x86.pet/~strawberry/june_88x31.png", href: "https://x86.pet", alt: "june" },
+        { src: "https://girlboss.ceo/assets/buttons/june.png", href: "https://girlboss.ceo", alt: "june" },
         { src: "https://vmfunc.gg/button.png", href: "https://vmfunc.gg", alt: "celeste" },
         { src: "https://notnite.com/buttons/notnite.png", href: "https://notnite.com", alt: "notnite" },
         { src: "https://notnite.com/buttons/88x31.png", href: "https://eightyeightthirty.one", alt: "eightyeightthirty.one" },
