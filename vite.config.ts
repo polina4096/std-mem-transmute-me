@@ -29,6 +29,7 @@ export default defineConfig({
         { src: "https://std.mem.transmute.me/88x31/madohomu.png", href: "https://homu.gay", alt: "homu.gay" },
         { src: "https://std.mem.transmute.me/88x31/zed.png", href: "https://zed.dev", alt: "Zed" },
         { src: "https://www.pitan76.net/image/banner88x31.png", href: "https://pitan76.net", alt: "Pitan" },
+        { src: "https://std.mem.transmute.me/88x31/miyuko.png", href: "https://calayucu.com/", alt: "miyuko" },
       ],
   },
   plugins: [
